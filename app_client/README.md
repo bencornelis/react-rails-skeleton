@@ -1,0 +1,1 @@
+Run `npm install` then `npm start`. Navigate to `localhost:3000`.
