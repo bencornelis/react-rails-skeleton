@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import './../styles/App.css';
 import { connect } from 'react-redux';
+import { Switch, Route } from 'react-router-dom';
+import Main from './Main';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        Hello world!
-      </div>
-    );
-  }
+function App(props) {
+  return (
+    <div>
+      <Switch>
+        <Route exact path='/' component={Main} />
+      </Switch>
+    </div>
+  )
 }
 
-const mapStateToProps = state => ({});
-
-export default connect(mapStateToProps)(App);
+export default App;

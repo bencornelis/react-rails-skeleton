@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import reducer from './reducers';
 import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
+import { BrowserRouter } from 'react-router-dom';
 
 const loggerMiddleware = createLogger();
 
@@ -21,7 +22,9 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>,
   document.getElementById('root')
 );
