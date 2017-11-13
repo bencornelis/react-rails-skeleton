@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './../styles/App.css';
-import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 import Main from './Main';
 
